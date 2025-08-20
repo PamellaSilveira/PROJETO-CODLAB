@@ -6,7 +6,7 @@
 
 body {
     font-family: sans-serif;
-    background-color: #0602f8;
+    background-color: #090040;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ body {
 }
 
 .login-container {
-    background-color: white;
+    background-color: #090040;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -30,12 +30,12 @@ body {
 .login-container input[type="password"] {
     width: 100%;
     padding: 10px;
-    border: 2px solid rgb(30, 9, 218);
+    border: 2px solid rgb(245, 244, 252);
     border-radius: 6px;
 }
 
 .login-container button {
-    background-color: white;
+    background-color: #090040;
     padding: 5px;
     border: 1px solid transparent;
     cursor: pointer;
