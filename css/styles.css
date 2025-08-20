@@ -80,12 +80,20 @@ footer{
 
 }
 
-.cursos h2{
+.cursos h2 {
     text-align: center;
-    margin: 90px;
-    font-weight:bold;
+    margin-top: 60px;
+    font-weight: 700; 
     font-size: 40px;
-    
+    color: #000;
+    line-height: 1.2;
+}
+.cursos p {
+    font-size: 0.95rem;
+    color: #495057;
+    line-height: 0.5;
+    padding: 15px 20px;
+    font-weight: 400; /* define o peso da fonte */
 }
 
 .apoiadores h2{
@@ -98,7 +106,8 @@ footer{
 
 .paragrafo-apoiadores{
    text-align:center;
-   font-size:25px;
+   font-size:20px;
+    color: #495057;
 }
 
 .empresas-apoiadoras{
@@ -111,33 +120,19 @@ footer{
 }
 
 .container-codlab{
-    background-color:#090040;
+    background-color:#090040;    
 }
 
 .titulo h2{
     color:white; 
     text-align: center;
-    padding: 70px;
+    padding: 20px;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 30px;
 }
-
-
-.container-imagem1{
-    height: 100vh;
-    display:grid;
-    grid-template-columns:50% 50%;
-    margin-left:100px;
-}
-
-.container-imagem1  p{
-    color:white;
-    margin:100px;
-}
-
 .container-imagem2{
   display:flex;
-  justify-content:flex-start; /* esquerda */
+  justify-content:flex-start; 
   align-items:center;
 }
 
@@ -149,6 +144,94 @@ footer{
 }
 .container-imagem2 p{
     color:white;
-    margin:100px;
+    margin: 100px;
 
+}
+
+container-imagem2 p{
+    font-size:20px;
+    color: #495057;
+
+}
+
+/* Seção geral */
+.container-comentario {
+  padding: 60px 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+/* Cabeçalho */
+.informacoes_comentario h2.Feedbacks {
+  font-size: 1rem;
+  color: #0d6efd;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.informacoes_comentario .titulo_comentario {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 15px;
+}
+
+.subtitulo_comentario {
+  font-size: 1rem;
+  color: #6c757d;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+/* Cards */
+.card {
+  border-radius: 15px;
+  border: none;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 4px solid #0d6efd;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #495057;
+  line-height: 1.5;
+}
+
+/* Rodapé do card */
+.card-footer {
+  background: #ffffff;
+  border-top: none;
+  font-size: 0.85rem;
+  color: #6c757d;
+  text-align: right;
+  padding: 15px 20px;
+}
+
+footer{
+    background-color: #090040;
+    padding:50px;
 }
