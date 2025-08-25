@@ -1,83 +1,261 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=PT+Sans&display=swap');
-
 
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-  font-family: "Nunito";
-  margin-top: 90px;
-  font-size: 18px;
+
+
+html {
+  scroll-behavior: smooth;
 }
 
-.nav {
+:root {
+  --primaria:#4f46e5;
+  --secundaria:#7c3aed;
+  --escuro:#0f172a;
+  --maisEscuro:#0a0f1c;
+  --claro:#e2e8f0;
+  --vidro:rgba(255,255,255,0.1);
+  --colorBotaoHover:#7965C1; 
+}
+
+body{
+  background-color: var(--escuro);
+  color:var(--claro);
+}
+
+.nav{
   position: fixed;
-  left: 0px;
-  top: 0px;
+  top:0;
+  background: rgba(15,13,42,0.8);
   width: 100%;
-  height: 80px;
-  background: rgb(2, 2, 87);
+  z-index: 100;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  list-style: none;
+  gap:3rem;
 
+}
 .nav a {
-  font-family: "Nunito";
-  color: white;
+  color:var(--claro);
   text-decoration: none;
-  margin: 10px;
-  font-size: 17px;
-  text-shadow: 0px 3px rgb(0, 0, 0, 0.3);
-  transition: scale 0.5s, filter 0.5s, margin 0.5s, text-shadow 0.5s;
+  font-weight:700;
+  position: relative;
+  padding: 0.5rem 0;
 }
 
-.container_principal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0; /* começa escondido */
+  background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+  transition: width 0.5s ease;
 }
 
-.container-primeiras_informacoes img {
-  width: 200px;
-  height: 200px;
+.nav a:hover::after {
+  width: 100%; /* anima até preencher o link */
+}
+
+.foto-perfil{
+  width: 250px;
+  height: 230px;
+  box-shadow: 18px 4px 102px -5px rgba(163,18,163,0.75);
   border-radius: 50%;
-  border: 3px solid #083566;
-
+  border:6px solid var(--vidro); 
 }
 
-.container-primeiras_informacoes h2 {
-  color: #000406;
-
+.cabecalho{
+  min-height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #083566;
-  color: white;
+.cabecalho p{
+  font-size: 20px;
+}
+
+.btn{
+  color:var(--claro);
+  font-size: 20px;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s, transform 0.3s;
+  background-color: var(--primaria);
+  padding: 15px;
+  border-radius: 7px;
+  font-weight: 700;
+  margin-top: 15px;
+  transition:
+    transform 0.5s,
+    filter 0.5s,
+    margin 0.5s,
+    text-shadow 0.5s;
 }
 
 .btn:hover {
-  background-color: #0553a0;
-  /* muda a cor ao passar o mouse */
-  transform: scale(1.05);
-  /* leve aumento */
+  transform: scale(1.1); /* Aumenta de tamanho */
+  filter: brightness(1.2); /* Fica mais claro */
+  margin-left: 5px; /* Move um pouquinho para a direita */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Brilho no texto */
+  background-color:var(--colorBotaoHover);
 }
 
+h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
 
-.sobremim{
-  text-align: center;
-  margin-top: 100px;
-  padding-bottom:30px;
+.sobre-caixa{
+  display:flex;
+  justify-content:flex-start; 
+  align-items:center;
+  max-width: 1200px;
+  margin:0 auto;
+  border-radius: 16px;
+  border: 3px solid var(--vidro);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255,255,255,0.05);
   
 }
 
-.linguagens{
-  text-decoration:none;
+.FotoSobreMim{
+  width: 500px;
+  height:450px;
+  border-radius: 10px;
+  display:block;            /* ignora text-align */
+  margin:0 !important;      /* remove mx-auto, se existir */
+  max-width:100%;
+  height:auto;
+}
+
+
+.sobre-caixa p{
+  text-align: justify;   /* deixa o texto justificado */
+  max-width: 600px;      /* largura máxima para não ficar muito espalhado */
+  line-height: 1.6;      /* espaçamento entre as linhas */
+  margin: 0 auto;        /* centraliza o bloco na tela */
+  font-size: 1rem;       /* tamanho confortável da fonte */
+  color: var(--claro);
+
+}
+
+@media(max-width:768px){
+  .sobre-caixa, nav{
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+  }
+}
+
+@media(max-width:480px){
+  body{
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+.FotoSobreMim2{
+   width: 500px;
+  height:450px;
+  border-radius: 10px;
+  display:block;            /* ignora text-align */
+  margin:0 !important;      /* remove mx-auto, se existir */
+  max-width:100%;
+  height:auto;
+  margin-right: 30;
+}
+
+.projetos{
+  padding: 6rem 2rem;
+}
+
+.projeto-caixa{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+  gap:2rem;
+  max-width: 1200px;
+  margin:0 auto;
+
+}
+
+.projetos-card{
+  background:rgba(3, 31, 66, 0.8);
+  border-radius: 16px; 
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--vidro);
+  overflow: hidden;
+
+
+}
+
+.projetos-titulo{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  
+}
+.projetos-card:hover{
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+  transform: translateY(-10px) scale(1.03);
+  transition: all 0.5s  ease;
+  cursor:pointer;
+
+}
+
+.projetos-imagem{
+  height:200px;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.paragrafos-projetos{
+  color: rgba(226,232,240,0.8);
+  line-height: 1.25rem;  
+}
+
+.caixa-textos-projetos{
+  padding:1rem;
+}
+
+.info-projetos{
+  margin-bottom: 5px;
+
+}
+.contatos{
+  padding: 6rem 2rem;
+}
+.formulario-contato{
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  padding: 2rem;
+  border:1px solid var(--vidro);
+  border-radius: 16px;
+}
+
+.contatos-titulo{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.contatos-paragrafo{
+  text-align: center;
+  margin-bottom:1rem;
+  color: rgba(226,232,240,0.8);
+  font-size: 18px;
+  
+}
+
+.nome-form{
+  display: flex;
+  justify-content: center;
 }
