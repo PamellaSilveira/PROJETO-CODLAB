@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="icon" href="../img/logo.jpeg" type="imagem/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Nossa História - CodLab Cursos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f9fc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: #003366;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+      
+    </style>
+</head>
+
+<body>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <header>
+
+        <div class="titulo-pag">
+            <h1>Codlab</h1>
+            <h2> Desenvolvendo seu futuro</h2>
+        </div>
+
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="../img/logosemfundo.png" alt="Logotipo CodLab" class="logo-img">
+            </a>
+
+            <!-- Botão de toggle para mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links e botões -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Links alinhados à esquerda -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../HTML/Home.html">Home</a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <a class="nav-link active" aria-current="page" href="../HTML/Nossa história.html">Nossa História</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Desenvolvedoras</a>
+                        <ul class="dropdown-menu">
+                            <ul class="lista-cursos">
+                                <li><a class="dropdown-item" href="marli.html">Marli Anelisa Cardoso Milkievicz</a>
+                                <li><a class="dropdown-item" href="Melissa.html">Melissa Cezar de Souza</a>
+                                <li><a class="dropdown-item" href="sobre.html">Pamela</a>
+                            </ul>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Cursos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <ul class="lista-cursos">
+                                <li><a class="dropdown-item" href="#">Angular</a></li>
+                                <li><a class="dropdown-item" href="#">C#</a></li>
+                                <li><a class="dropdown-item" href="#">C++</a></li>
+                                <li><a class="dropdown-item" href="#">CSS</a></li>
+                                <li><a class="dropdown-item" href="#">Docker</a></li>
+                                <li><a class="dropdown-item" href="#">Flutter</a></li>
+                                <li><a class="dropdown-item" href="#">HTML</a></li>
+                                <li><a class="dropdown-item" href="#">Java</a></li>
+                                <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                                <li><a class="dropdown-item" href="#">Kubernetes</a></li>
+                                <li><a class="dropdown-item" href="#">Microsoft Azure</a></li>
+                                <li><a class="dropdown-item" href="#">MongoDB</a></li>
+                                <li><a class="dropdown-item" href="#">MySQL</a></li>
+                                <li><a class="dropdown-item" href="#">PHP</a></li>
+                                <li><a class="dropdown-item" href="#">PostgreSQL</a></li>
+                                <li><a class="dropdown-item" href="#">Python</a></li>
+                                <li><a class="dropdown-item" href="#">React</a></li>
+                                <li><a class="dropdown-item" href="#">TypeScript</a></li>
+                                <li><a class="dropdown-item" href="#">Vue.js</a></li>
+                            </ul>
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contatos</a>
+                    </li>
+                </ul>
+
+                <!-- Botões alinhados à direita -->
+                <div class="d-flex" role="search">
+
+                    <a href="../Html/cadastro.html" style="text-decoration: none; font: size 35px; padding:10px;">Criar
+                        Conta</a>
+                    <a href="login.html" class="btn btn-primary me-2" type="submit">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="p1">Nossa História</div>
+
+        <section>
+            <h2>Ano de Fundação</h2>
+            <p>A CodLab foi fundada em <strong>2024</strong>, em meio à crescente demanda por profissionais capacitados
+                em tecnologia e ao desejo de transformar a educação digital no Brasil.</p>
+        </section>
+
+        <section>
+            <h2>Quem Fundou</h2>
+            <p>Fundada por um grupo de <strong>desenvolvedoras apaixonadas pela área da tecnologia</strong>, a CodLab
+                nasceu com a missão de tornar o conhecimento acessível a todos, independentemente da origem ou condição
+                social.</p>
+        </section>
+
+        <section>
+            <h2>Por Que Surgiu a Ideia</h2>
+            <p>Nos últimos anos, ficou evidente o crescimento de empresas que estão em busca de profissionais
+                qualificados no ramo da programação. Com isso, surgiu a ideia de criar uma plataforma com
+                <strong>cursos acessíveis, práticos e voltados para o mercado de trabalho</strong>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Desafios Superados</h2>
+            <p>Enfrentamos muitos desafios, como a <strong>adaptação de conteúdos para o ambiente
+                    online</strong>, a <strong>captação de alunos</strong> e a construção de uma plataforma estável e
+                intuitiva. Com resiliência e feedback constante dos alunos, superamos cada um deles.</p>
+        </section>
+
+        <section>
+            <h2>Missão, Visão e Valores</h2>
+            <p><strong>Missão:</strong> Ampliar o acesso à educação tecnológica de qualidade, promovendo transformação
+                social e profissional por meio do conhecimento.</p>
+            <p><strong>Visão:</strong> Ser referência nacional em ensino de tecnologia até 2030.</p>
+            <p><strong>Valores:</strong> Inclusão, inovação, responsabilidade social, qualidade no ensino e foco no
+                aluno.</p>
+        </section>
+
+        <section>
+            <h2>Conquistas Até Hoje</h2>
+            <ul>
+                <li>Mais de <strong>5.000 alunos formados</strong> em todo o Brasil</li>
+                <li><strong>Parcerias com empresas como Fecomércio, Senac e Sucesu</strong></li>
+                <li>Nota média de <strong>4,9/5</strong> em avaliações de cursos</li>
+                <li>Equipe com mais de <strong>30 especialistas</strong> em diversas áreas da tecnologia</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-logo">
+                    <h2>Codlab</h2>
+                    <p>Desenvolvendo seu futuro</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Links úteis</h3>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Desenvolvedoras</a></li>
+                        <li><a href="#">Nossa História</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p>Email: contato@Codlab.com</p>
+                    <p>Telefone: (51) 99999-9999</p>
+                    <p>Endereço: Rua Barão de Vitória- Porto Alegre </p>
+                    <p>&copy; 2025 Codlab. Todos os direitos reservados.</p>
+                </div>
+
+                <div class="footer-social">
+                    <h3>Siga-nos</h3>
+                    <a href="https://www.google.com/?hl=pt_BR"> <img src="../img/facebook.png" alt="Redes Sociais"
+                            width="50px" height="40px"></a>
+                    <a href="https://www.google.com/?hl=pt_BR"> <img src="../img/instagram2.png" alt="Redes Sociais"
+                            width="60px" height="40px"></a>
+                    <a href="https://www.google.com/?hl=pt_BR"> <img src="../img/linkedin2.png" alt="Redes Sociais"
+                            width="50px" height="50px"></a>
+
+                </div>
+
+                <div class="footer-social">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.7916152930943!2d-51.221467824446215!3d-30.04283567492445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951978567f17f28d%3A0x2c2c5272bacf4d3a!2sSenac%20Tech!5e0!3m2!1spt-BR!2sbr!4v1755891881314!5m2!1spt-BR!2sbr"
+                        width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+        </footer>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
