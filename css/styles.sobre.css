@@ -69,6 +69,7 @@ body{
   box-shadow: 18px 4px 102px -5px rgba(163,18,163,0.75);
   border-radius: 50%;
   border:6px solid var(--vidro); 
+   animation: flutuar 3s ease-in-out infinite;
 }
 
 .cabecalho{
@@ -161,20 +162,31 @@ h2{
     padding: 20px;
   }
 }
-.FotoSobreMim2{
-   width: 500px;
-  height:450px;
+.FotoSobreMim2 {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
-  display:block;            /* ignora text-align */
-  margin:0 !important;      /* remove mx-auto, se existir */
-  max-width:100%;
-  height:auto;
-  margin-right: 30;
+  display: block;
+  margin: 0;              /* remove margens padrão */
+  margin-right: 30px;     /* aplica só à direita */
+  
 }
 
-.projetos{
-  padding: 6rem 2rem;
+@keyframes flutuar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
+
+.projetos {
+  padding: 6rem 2rem;
+  animation: flutuar 3s ease-in-out infinite;
+}
+
 
 .projeto-caixa{
   display:grid;
@@ -255,7 +267,43 @@ h2{
   
 }
 
-.nome-form{
+.campo-form{
+  width: 100%;
+  padding: 1rem;
+  background:rgba(255,255,255,0.05);
+  border-radius: 8px;
+  color: rgba(226,232,240,0.8);
+  border: 1px solid var(--vidro);
+  margin-bottom: 15px;
+
+}
+
+.text-form{
+  margin-bottom: 1.5rem;
+   width: 100%;
+  padding: 1rem;
+  background:rgba(255,255,255,0.05);
+  border-radius: 8px;
+  color: rgba(226,232,240,0.8);
+  border: 1px solid var(--vidro);
+}
+.botao-submit{
   display: flex;
   justify-content: center;
+}
+footer {
+  background: #0f172a; /* fundo escuro */
+  padding: 15px;
+  text-align: center;
+}
+
+.footer-icones a {
+  color: #fff; /* cor branca */
+  font-size: 2rem; /* tamanho do ícone */
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-icones a:hover {
+  color: #4f46e5; /* cor ao passar o mouse */
 }

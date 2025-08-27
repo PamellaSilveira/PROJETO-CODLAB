@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio</title>
   <link rel="stylesheet" href="../css/styles.sobre.css">
-
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -79,6 +77,9 @@
             incluindo informações sobre cursos, acessibilidade e responsividade.
           </h3>
       </div>
+         <a href="" target="_blank">
+            <button class="btn" type="button">Repositório</button>
+          </a>
       </div>
         <div class="projetos-card">
           <img src="../img/php.jpeg" alt="Projeto Quiz" class="projetos-imagem">
@@ -86,6 +87,9 @@
            <h3 class=info-projetos>Quiz</h3>
           <h3>Quiz interativo desenvolvido com HTML, CSS e JavaScript.</h3>
       </div>
+        <a href="" target="_blank">
+            <button class="btn" type="button">Repositório</button>
+         </a>
       </div>   
         <div class="projetos-card">
           <img src="../img/java.jpeg" alt="Projeto Codlab" class="projetos-imagem">
@@ -97,6 +101,10 @@
             Similique, vel error modi mollitia consectetur voluptas iure voluptatem inventore officiis!
           </h3>
       </div>
+     <a href="" target="_blank">
+            <button class="btn" type="button">Repositório</button>
+     </a>
+      
       </div>
         <div class="projetos-card">
           <img src="../img/sql.jpeg" alt="Projeto Hambúrguer"  class="projetos-imagem">
@@ -109,6 +117,9 @@
             sed cum tempora delectus.
           </h3>
         </div>
+           <a href="" target="_blank">
+            <button class="btn" type="button">Repositório</button>
+         </a>
         </div>
       </div>
     </section>
@@ -119,22 +130,55 @@
         <h2 class="contatos-titulo">Entre em Contato</h2>
         <p class="contatos-paragrafo">Se o meu portfólio chamou sua atenção e você acredita que posso contribuir com sua equipe, entre em contato.</p>
         
-        <form class="formulario-contato" id="formulario">
+        <form class="formulario-contato" id="formulario" id="formulario" onsubmit="enviarWhats(event)">
 
             <div class="nome-form">
-            <input placeholder="Nome" class="campo-form">
+            <input placeholder="Nome" class="campo-form" id="nome">
             </div>
 
             <div class="grupo-form">
-            <textarea placeholder="Digite sua mensagem" class="text-form"></textarea>
+            <textarea placeholder="Digite sua mensagem" class="text-form" rows="4" id="mensagem"></textarea>
             </div>
 
+            <div class="botao-submit">
+            <button type="submit" class="btn">Enviar WhatsApp</button>
+            </div>
             
-              
             </div>
         </form>
-    </section>
 
+        <footer>
+  <div class="footer-icones">
+    <a href="https://www.linkedin.com/in/pamella-silveira-96721715a/" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/PamellaSilveira" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+</footer>
 
 </body>
 </html>
+
+    <script>
+
+      function enviarWhats(event){
+        event.preventDefault()
+
+      const nome=document.getElementById('nome').value;
+      const mensagem=document.getElementById('mensagem').value;
+      const telefone='5551991985614';
+
+      const texto=`Olá!Me chamo ${nome} , ${mensagem}`;
+      const msgFormatada= encodeURI(texto);
+
+    
+      const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+
+      window.open(url, '_blank');
+      
+      }
+      
+    </script>
+
