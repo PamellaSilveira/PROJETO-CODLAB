@@ -96,6 +96,21 @@ footer{
     font-weight: 400; /* define o peso da fonte */
 }
 
+.empresas-apoiadoras {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.empresas-apoiadoras img {
+  max-width: 200px; /* tamanho máximo da imagem */
+  width: 100%;       /* ocupa 100% do container responsivo */
+  height: auto;
+  object-fit: contain;
+}
+
 .apoiadores h2{
     text-align: center;
     margin: 50px;
@@ -108,15 +123,6 @@ footer{
    text-align:center;
    font-size:20px;
     color: #495057;
-}
-
-.empresas-apoiadoras{
-    display:flex; 
-    justify-content:center; 
-    align-items:center; 
-    height: 100px; 
-    margin:50px;
-    padding:25px;    
 }
 
 .container-codlab{
@@ -132,8 +138,9 @@ footer{
 }
 .container-imagem2{
   display:flex;
-  justify-content:flex-start; 
+  justify-content:space-between; 
   align-items:center;
+  max-width:100%;
 }
 
 .container-imagem2 img{
@@ -148,7 +155,7 @@ footer{
 
 }
 
-container-imagem2 p{
+.container-imagem2 p{
     font-size:20px;
     color: #495057;
 
@@ -242,48 +249,81 @@ footer{
 }
 
 .footer {
-  background-color: #0d1b2a;
+  background-color: #222;
   color: #fff;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
 }
 
-.footer .container {
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
 }
 
-.footer h2, .footer h3 {
-  color: #00aaff;
-  margin-bottom: 10px;
+.footer-logo,
+.footer-links,
+.footer-contact,
+.footer-social {
+  flex: 1 1 220px; /* cresce e encolhe conforme necessário */
+  min-width: 220px;
 }
 
-.footer ul {
+.footer-links ul {
   list-style: none;
   padding: 0;
 }
 
-.footer ul li {
+.footer-links li {
   margin: 5px 0;
 }
 
-.footer a {
-  color: #ddd;
-  text-decoration: none;
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
-.footer a:hover {
-  color: #00aaff;
+.footer-social img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s;
 }
 
-.footer-bottom {
-  text-align: center;
-  border-top: 1px solid #444;
-  margin-top: 20px;
-  padding-top: 15px;
-  font-size: 0.9rem;
+.footer-social img:hover {
+  transform: scale(1.1);
+}
+
+.footer-social iframe {
+  width: 100%;
+  max-width: 300px;
+  height: 250px;
+  border: 0;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-social iframe {
+    max-width: 100%;
+    height: 200px;
+  }
 }
 
 .lista-cursos {
@@ -309,4 +349,102 @@ footer{
   font-size: 50px;
   text-align: center;
   color: black;
+}
+
+@media(max-width:768px){
+  .container-imagem2{
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+  }
+}
+
+@media(max-width:480px){
+  .paragrafo-apoiadores{
+    font-size: 16px;
+    padding: 20px;
+  }
+
+body {
+  background-color: #1a1a1a;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile: empilha verticalmente */
+@media (max-width: 768px) {
+  .section, .section.reverse {
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+  
+
+}
+.container-imagem2 {
+  display: flex;
+  align-items: center; /* alinha verticalmente o texto com a imagem */
+  gap: 20px; /* espaço entre imagem e texto */
+  max-width: 100%;
+}
+
+.container-imagem2 img.imagem {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px; /* opcional: bordas arredondadas */
+}
+
+.container-imagem2 p.texto {
+  flex: 1; /* ocupa o espaço restante ao lado da imagem */
+  margin: 0;
+  text-align: justify; /* texto justificado */
+}
+
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* separa os itens: esquerda x direita */
+  align-items: center;
+  background-color: #0b0040;
+  padding: 10px 20px;
+  color: white;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between; /* separa os itens: esquerda x direita */
+  align-items: center;
+  background-color: #0b0040;
+  padding: 10px 20px;
+  color: white;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between; /* distribui os 3 blocos: esquerda, centro, direita */
+  align-items: center;
+  background-color: #0b0040;
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo {
+  text-align: center;
+  flex: 1; /* garante que fique centralizado */
+}
+
+button {
+  background-color: #0066ff;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
 }

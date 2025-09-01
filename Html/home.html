@@ -5,16 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Codlab Cursos</title>
-  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link rel="icon" href="../img/logo.jpeg" type="image/png">
   <link rel="icon" href="../img/logo.jpeg" type="imagem/png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+
 </head>
 
 <body>
-
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
@@ -26,543 +26,219 @@
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
-  <header>
 
-    <div class="titulo-pag">
-      <h1>Codlab</h1>
-      <h2> Desenvolvendo seu futuro</h2>
-    </div>
+  <!-- *** INÍCIO: Wrapper necessário para o zoom funcionar (adicionado) *** -->
+  <div id="zoomWrapper">
+    <!-- *** FIM: Wrapper necessário para o zoom funcionar *** -->
 
-  </header>
+    <header>
+      <div class="zoom-buttons">
+        <button id="decrease">A-</button>
+        <button id="increase">A+</button>
+      </div>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <!-- Logo -->
-      <a class="navbar-brand" href="#">
-        <img src="../img/logosemfundo.png" alt="Logotipo CodLab" class="logo-img">
-      </a>
+      <div class="titulo-pag">
+        <h1>Codlab</h1>
+        <h2> Desenvolvendo seu futuro</h2>
+      </div>
 
-      <!-- Botão de toggle para mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    </header>
 
-      <!-- Links e botões -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- Links alinhados à esquerda -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../HTML/Home.html">Home</a>
-          </li>
-          <li class="nav-item"></li>
-          <a class="nav-link active" aria-current="page" href="../HTML/Nossa história.html">Nossa História</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Desenvolvedoras</a>
-            <ul class="dropdown-menu">
-              <ul class="lista-cursos">
-                <li><a class="dropdown-item" href="marli.html">Marli Anelisa Cardoso Milkievicz</a>
-                <li><a class="dropdown-item" href="Melissa.html">Melissa Cezar de Souza</a>
-                <li><a class="dropdown-item" href="../Html/sobre.html">Pamella Prestes Silveira</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="../img/logosemfundo.png" alt="Logotipo CodLab" class="logo-img">
+        </a>
+
+        <!-- Botão de toggle para mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links e botões -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Links alinhados à esquerda -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../HTML/Home.html">Home</a>
+            </li>
+            <li class="nav-item"></li>
+            <a class="nav-link active" aria-current="page" href="../HTML/Nossa história.html">Nossa História</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Desenvolvedoras</a>
+              <ul class="dropdown-menu">
+                <ul class="lista-cursos">
+                  <li><a class="dropdown-item" href="marli.html">Marli Anelisa Cardoso Milkievicz</a>
+                  <li><a class="dropdown-item" href="Melissa.html">Melissa Cezar de Souza</a>
+                  <li><a class="dropdown-item" href="../Html/sobre.html">Pamella Prestes Silveira</a>
+                </ul>
               </ul>
-            </ul>
-          </li>
+            </li>
 
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Cursos
-            </a>
-            <ul class="dropdown-menu">
-              <ul class="lista-cursos">
-                <li><a class="dropdown-item" href="#">Angular</a></li>
-                <li><a class="dropdown-item" href="#">C#</a></li>
-                <li><a class="dropdown-item" href="#">C++</a></li>
-                <li><a class="dropdown-item" href="#">CSS</a></li>
-                <li><a class="dropdown-item" href="#">Docker</a></li>
-                <li><a class="dropdown-item" href="#">Flutter</a></li>
-                <li><a class="dropdown-item" href="#">HTML</a></li>
-                <li><a class="dropdown-item" href="#">Java</a></li>
-                <li><a class="dropdown-item" href="#">JavaScript</a></li>
-                <li><a class="dropdown-item" href="#">Kubernetes</a></li>
-                <li><a class="dropdown-item" href="#">Microsoft Azure</a></li>
-                <li><a class="dropdown-item" href="#">MongoDB</a></li>
-                <li><a class="dropdown-item" href="#">MySQL</a></li>
-                <li><a class="dropdown-item" href="#">PHP</a></li>
-                <li><a class="dropdown-item" href="#">PostgreSQL</a></li>
-                <li><a class="dropdown-item" href="#">Python</a></li>
-                <li><a class="dropdown-item" href="#">React</a></li>
-                <li><a class="dropdown-item" href="#">TypeScript</a></li>
-                <li><a class="dropdown-item" href="#">Vue.js</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Cursos
+              </a>
+              <ul class="dropdown-menu">
+                <ul class="lista-cursos">
+                  <li><a class="dropdown-item" href="#">Angular</a></li>
+                  <li><a class="dropdown-item" href="#">C#</a></li>
+                  <li><a class="dropdown-item" href="#">C++</a></li>
+                  <li><a class="dropdown-item" href="#">CSS</a></li>
+                  <li><a class="dropdown-item" href="#">Docker</a></li>
+                  <li><a class="dropdown-item" href="#">Flutter</a></li>
+                  <li><a class="dropdown-item" href="#">HTML</a></li>
+                  <li><a class="dropdown-item" href="#">Java</a></li>
+                  <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                  <li><a class="dropdown-item" href="#">Kubernetes</a></li>
+                  <li><a class="dropdown-item" href="#">Microsoft Azure</a></li>
+                  <li><a class="dropdown-item" href="#">MongoDB</a></li>
+                  <li><a class="dropdown-item" href="#">MySQL</a></li>
+                  <li><a class="dropdown-item" href="#">PHP</a></li>
+                  <li><a class="dropdown-item" href="#">PostgreSQL</a></li>
+                  <li><a class="dropdown-item" href="#">Python</a></li>
+                  <li><a class="dropdown-item" href="#">React</a></li>
+                  <li><a class="dropdown-item" href="#">TypeScript</a></li>
+                  <li><a class="dropdown-item" href="#">Vue.js</a></li>
+                </ul>
+
+
               </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer-contatos">Contatos</a>
+            </li>
+          </ul>
 
+          <!-- Botões alinhados à direita -->
+          <div class="d-flex" role="search">
 
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#footer-contatos">Contatos</a>
-          </li>
-        </ul>
-
-        <!-- Botões alinhados à direita -->
-        <div class="d-flex" role="search">
-
-          <a href="../Html/cadastro.html" style="text-decoration: none; font: size 35px; padding:10px;">Criar
-            Conta</a>
-          <a href="login.html" class="btn btn-primary me-2" type="submit">Login</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-
-  <main>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-          aria-label="Slide 4"></button>
-
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../img/1.png" class="d-block w-100" height="500px">
-        </div>
-        <div class="carousel-item">
-          <img src="../img/2.png" class="d-block w-100" height="500px">
-        </div>
-        <div class="carousel-item">
-          <img src="../img/3.png" class="d-block w-100" height="500px">
-        </div>
-        <div class="carousel-item">
-          <img src="../img/4.png" class="d-block w-100" height="500px">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-
-    <div class="cursos">
-
-      <h2>Nossos Cursos<h2>
-          <p>Aprenda programação do zero e prepare-se para uma carreira de sucesso</p>
-    </div>
-
-    <div class="row row-cols-1 row-cols-md-3 m-4">
-      <div class="col">
-        <div class="card h-100">
-          <img src="../img/react.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">REACT</h5>
-            <p><i class="bi bi-clock"></i> 40 horas</p>
-            <p class="card-text">Aprenda a criar interfaces modernas e dinâmicas com o React, uma das bibliotecas mais
-              populares do mercado. Neste curso, você vai desenvolver aplicações web interativas, aprender conceitos
-              como componentes, estados e props, e estará pronto para construir projetos profissionais.</p>
-            <p>
-              <i class="bi bi-star-fill text-warning"></i> 4,8
-            </p>
+            <a href="../Html/cadastro.html" style="text-decoration: none; font: size 35px; padding:10px;">Criar
+              Conta</a>
+            <a href="login.html" class="btn btn-primary me-2" type="submit">Login</a>
           </div>
-          <a href="https: //www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" target="_blank">
-            <button class="btn btn-primary" type="button">Iniciar Curso</button>
-            </a>
         </div>
       </div>
+    </nav>
 
-      <div class="col">
-        <div class="card h-100">
-          <img src="../img/php.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">PHP</h5>
-            <p><i class="bi bi-clock"></i> 240 horas</p>
-            <p class="card-text">Descubra como desenvolver sites e sistemas dinâmicos utilizando PHP, uma das linguagens
-              mais usadas para web. Neste curso, você vai aprender desde a lógica básica até a criação de aplicações
-              completas com banco de dados e integração com front-end.</p>
-            <i class="bi bi-star-fill text-warning"></i> 4,7
+    <main>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/1.png" class="d-block w-100" height="500px">
           </div>
-          <a href="https: //www.youtube.com/watch?v=TfsO0BGvGn0&list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_" target="_blank">
-            <button class="btn btn-primary" type="button">Iniciar Curso</button>
-            </a>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100">
-          <img src="../img/sql.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">SQL</h5>
-            <p><i class="bi bi-clock"></i> 36 horas</p>
-            <p class="card-text">Domine a linguagem SQL para gerenciar e consultar bancos de dados com eficiência. Neste
-              curso, você aprenderá a criar tabelas, manipular dados e montar consultas otimizadas para projetos reais,
-              uma habilidade essencial para qualquer desenvolvedor.</p>
-            <i class="bi bi-star-fill text-warning"></i> 4,9
+          <div class="carousel-item">
+            <img src="../img/2.png" class="d-block w-100" height="500px">
           </div>
-          <a href="https: //www.youtube.com/watch?v=Ofktsne-utM&list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r" target="_blank">
-            <button class="btn btn-primary" type="button">Iniciar Curso</button>
-            </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="row row-cols-1 row-cols-md-3 m-4">
-      <div class="col">
-        <div class="card h-100">
-          <img src="../img/js.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">JAVASCRIPT</h5>
-            <p><i class="bi bi-clock"></i> 40 horas</p>
-               e interativas. Você vai dominar variáveis, funções, eventos e lógica de programação, dando o primeiro
-              passo para se tornar um desenvolvedor completo.</p>
-            <i class="bi bi-star-fill text-warning"></i> 4,8
+          <div class="carousel-item">
+            <img src="../img/3.png" class="d-block w-100" height="500px">
           </div>
-          <a href="https: //www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" target="_blank">
-            <button class="btn btn-primary" type="button">Iniciar Curso</button>
-            </a>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100">
-          <img src="../img/java.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">JAVA</h5>
-            <p><i class="bi bi-clock"></i> 76 horas</p>
-            <p class="card-text">Aprenda Java e domine uma das linguagens mais utilizadas no mundo. Neste curso, você
-              vai entender desde a programação orientada a objetos até a criação de aplicações robustas para desktop,
-              web e mobile.</p>
-            <i class="bi bi-star-fill text-warning"></i> 4,7
+          <div class="carousel-item">
+            <img src="../img/4.png" class="d-block w-100" height="500px">
           </div>
-          <a href="https: //www.youtube.com/watch?v=sTX0UEplF54&list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR" target="_blank">
-            <button class="btn btn-primary" type="button">Iniciar Curso</button>
-            </a>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
 
-      <div class="col">
-        <div class="card h-100">
-          <img src="../img/phyton.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">PYTHON</h5>
-            <p><i class="bi bi-clock"></i> 140 horas</p>
-            <p class="card-text">Explore Python, uma das linguagens mais versáteis do mercado. Você aprenderá desde
-              fundamentos até automação, análise de dados e desenvolvimento web, abrindo portas para diversas áreas da
-              tecnologia.</p>
-            <i class="bi bi-star-fill text-warning"></i> 4,6
-          </div>
-          <a href="https: //www.youtube.com/watch?v=S9uPNppGsGo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0" target="_blank">
-            <button class="btn btn-primary" type="button">Iniciar Curso</button>
-            </a>
-        </div>
-      </div>
-    </div>
-    <section class="text-center my-5">
-      <h2 class="fw-bold">Explore nossos outros cursos</h2>
-      <p class="text-muted">Aprenda as tecnologias mais requisitadas por recrutadores de todo o mundo.</p>
 
-      <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+      <div class="cursos">
 
-        <!-- Linguagens -->
-        <span class="badge rounded-pill bg-light text-dark d-flex align-items-center p-2 shadow-sm">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="24"
-            class="me-2" />
-          <a href="https: //www.w3schools.com/html/html_intro.asp" target="_blank" class="linguagens">HTML</a>
-
-        </span>
-
-        <span class="badge rounded-pill bg-light text-dark d-flex align-items-center p-2 shadow-sm">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="24"
-            class="me-2" />
-          <a href="https: //www.w3schools.com/css/default.asp" target="_blank" class="linguagens">CSS</a>
-        </span>
-
-        <span class="badge rounded-pill bg-light text-dark d-flex align-items-center p-2 shadow-sm">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="24"
-            class="me-2" />
-          <a href="https: //www.w3schools.com/js/default.asp" target="_blank" class="linguagens">JavaScript</a>
-        </span>
-
-        <span class="badge rounded-pill bg-light text-dark d-flex align-items-center p-2 shadow-sm">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="24"
-            class="me-2" />
-          <a href="https: //www.typescriptlang.org/pt/docs/" target="_blank" class="linguagens">TypeScript</a>
-        </span>
-
-        <span class="badge rounded-pill bg-light text-dark d-flex align-items-center p-2 shadow-sm">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="24"
-            class="me-2" />
-          <a href="https: //www.w3schools.com/java/default.asp" target="_blank" class="linguagens">Java</a>
-        </span>
-
-        <span class="badge rounded-pill bg-light text-dark d-flex align-items-center p-2 shadow-sm">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="24"
-            class="me-2" />
-          <a href="https: //www.w3schools.com/python/default.asp" target="_blank" class="linguagens">Phyton</a>
-        </span>
-
-        <span class="badge rounded-pill bg-light text-dark d-flex align-items-center p-2 shadow-sm">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="24" class="me-2" />
-          <a href="https: //www.w3schools.com/php/default.asp" target="_blank" class="linguagens">Php</a>
-        </span>
-
-        <span class="badge rounded-pill bg-light text-dark d-flex align-items-center p-2 shadow-sm">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="24"
-            class="me-2" />
-          <a href="https: //www.w3schools.com/cpp/default.asp" target="_blank" class="linguagens">C++</a>
-        </span>
-
-        <span class="badge rounded-pill bg-light text-dark d-flex align-items-center p-2 shadow-sm">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="24"
-            class="me-2" />
-          <a href="https: //www.w3schools.com/cs/index.php" target="_blank" class="linguagens">C#</a>
-        </span>
-
-        <!-- Frameworks -->
-        <span class="badge rounded-pill bg-light text-dark d-flex align-items-center p-2 shadow-sm">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="24"
-            class="me-2" />
-          <a href="https: //pt-br.react.dev/" target="_blank" class="linguagens">React</a>
-        </span>
-
-        <span class="badge rounded-pill bg-light text-dark d-flex align-items-center p-2 shadow-sm">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="24"
-            class="me-2" />
-          <a href="https: //angular.dev/" target="_blank" class="linguagens">Angular</a>
-        </span>
-
-        <span class="badge rounded-pill bg-light text-dark d-flex align-items-center p-2 shadow-sm">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="24"
-            class="me-2" />
-          <a href="https: //vuejs.org/" target="_blank" class="linguagens">Vue.js</a>
-        </span>
-
-        <span class="badge rounded-pill bg-light text-dark d-flex align-items-center p-2 shadow-sm">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="24"
-            class="me-2" />
-          <a href="https:
-            //flutter.dev/?utm_source=google&utm_medium=cpc&utm_campaign=pmax_gads_brand&utm_content=latam_br&gclsrc=aw.ds&gad_source=1&gad_campaignid=19933098647&gbraid=0AAAAAC-INI9dMUqEtQp5bqi_nD70hwYI9&gclid=Cj0KCQjw5JXFBhCrARIsAL1ckPtH_gyOKPnHJQVIaRCiugDou30vZGJLziQcOWEjkTdStxDUYdhXwQcaAjemEALw_wcB"
-            target="_blank" class="linguagens">Flutter</a>
-
-        </span>
-
-        <!-- Banco de Dados -->
-        <span class="badge rounded-pill bg-light text-dark d-flex align-items-center p-2 shadow-sm">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="24"
-            class="me-2" />
-          <a href="https: //dev.mysql.com/doc/" target="_blank" class="linguagens">MySQL</a>
-
-        </span>
-
-        <span class="badge rounded-pill bg-light text-dark d-flex align-items-center p-2 shadow-sm">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="24"
-            class="me-2" />
-          <a href="https: //www.postgresql.org/docs/" target="_blank" class="linguagens">PostgreSQL</a>
-
-        </span>
-
-        <span class="badge rounded-pill bg-light text-dark d-flex align-items-center p-2 shadow-sm">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="24"
-            class="me-2" />
-          <a href="https: //www.mongodb.com/pt-br/docs/" target="_blank" class="linguagens">MongoDB</a>
-        </span>
-
-        <!-- Cloud & DevOps -->
-        <span class="badge rounded-pill bg-light text-dark d-flex align-items-center p-2 shadow-sm">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="24"
-            class="me-2" />
-          <a href="https: //www.docker.com/get-started/" target="_blank" class="linguagens">Docker</a>
-
-        </span>
-
-        <span class="badge rounded-pill bg-light text-dark d-flex align-items-center p-2 shadow-sm">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" width="24"
-            class="me-2" />
-          <a href="https: //kubernetes.io/pt-br/docs/home/" target="_blank" class="linguagens">Kubernetes</a>
-
-        </span>
-
-        <span class="badge rounded-pill bg-light text-dark d-flex align-items-center p-2 shadow-sm">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" width="24"
-            class="me-2" />
-          <a href="https: //cloud.google.com/docs?hl=pt-br" target="_blank" class="linguagens">Kubernetes</a>
-        </span>
-
-        <span class="badge rounded-pill bg-light text-dark d-flex align-items-center p-2 shadow-sm">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="24"
-            class="me-2" />
-          <a href="https: //learn.microsoft.com/pt-br/azure/?product=popular " target=" _blank" class="linguagens">
-            Microsoft Azure</a>
-
-        </span>
-
-      </div>
-    </section>
-
-    <div class="container-codlab">
-
-      <div class="titulo">
-        <h2>A forma Codlab de aprender </h2>
-      </div>
-      <div class="container-imagem2">
-        <img src="../img/pessoa.png" width="300" height="300">
-        <p>Na nossa plataforma, você encontra diversas tecnologias para explorar e aprender de forma prática.
-          Desenvolva suas soft skills e hard skills enquanto avança em trilhas de programação que oferecem a base
-          necessária para disputar vagas no mercado de trabalho.
-          Seja você estudante de tecnologia ou alguém em processo de transição de carreira, aqui é o lugar certo para
-          crescer e conquistar novas oportunidades.</p>
-      </div>
-      <div class="container-imagem2">
-        <p>Na nossa plataforma, você pode acessar os cursos de onde estiver e no dispositivo que preferir, seja no
-          celular, tablet ou computador. Isso significa que mesmo quem tem pouco tempo disponível consegue aproveitar os
-          momentos livres para estudar, sem deixar o aprendizado de lado. Se a sua rotina é corrida e muitas vezes
-          cansativa, aqui você encontra a flexibilidade que precisa para organizar seus estudos no seu ritmo e continuar
-          evoluindo, sem abrir mão das suas responsabilidades do dia a dia.</p>
-        <img src="../img/dispositivos.png" width="300" height="300">
-      </div>
-    </div>
-
-
-    <div class="container-comentario my-5">
-      <div class="informacoes_comentario text-center mb-4">
-        <h2 class="Feedbacks">Feedbacks Reais</h2>
-        <h2 class="titulo_comentario">
-          O que quem estudou na <strong>CodLab</strong> achou dos cursos
-        </h2>
-        <p class="subtitulo_comentario">
-          Depoimentos de alunos e alunas que concluíram nossos módulos e compartilharam suas experiências.
-        </p>
+        <h2>Nossos Cursos<h2>
+            <p>Aprenda programação do zero e prepare-se para uma carreira de sucesso</p>
       </div>
 
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <!-- CARD 1 -->
+      <div class="row row-cols-1 row-cols-md-3 m-4">
         <div class="col">
-          <div class="card h-100 shadow-sm">
-            <img src="../img/depoimento1.jpg" class="card-img-top" alt="Aluno da CodLab">
+          <div class="card h-100">
+            <img src="../img/react.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Mateus Souza</h5>
-              <p class="card-text">
-                "O curso me ajudou a finalmente entender lógica de programação. Hoje consigo desenvolver meus próprios
-                projetos!"
+              <h5 class="card-title">REACT</h5>
+              <p><i class="bi bi-clock"></i> 40 horas</p>
+              <p class="card-text">Aprenda a criar interfaces modernas e dinâmicas com o React, uma das bibliotecas mais
+                populares do mercado. Neste curso, você vai desenvolver aplicações web interativas, aprender conceitos
+                como componentes, estados e props, e estará pronto para construir projetos profissionais.</p>
+              <p>
+                <i class="bi bi-star-fill text-warning"></i> 4,8
               </p>
             </div>
-            <div class="card-footer">
-              <small class="text-muted">Concluiu o módulo de JavaScript</small>
-            </div>
+            <a href="https://www.youtube.com/watch?v=ggtWTKbhN_U&list=PL29TaWXah3iYzP5FGywXezXm4ZvBibGSk"
+              target="_blank" class="btn btn-primary">
+              Iniciar Curso
+            </a>
           </div>
         </div>
 
-        <!-- CARD 2 -->
         <div class="col">
-          <div class="card h-100 shadow-sm">
-            <img src="../img/depoimento3.jpg" class="card-img-top" alt="Aluno da CodLab">
+          <div class="card h-100">
+            <img src="../img/php.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Bruna Ferreira</h5>
-              <p class="card-text">
-                "A plataforma é muito prática, pude estudar de qualquer lugar e adaptar os estudos à minha rotina."
-              </p>
+              <h5 class="card-title">PHP</h5>
+              <p><i class="bi bi-clock"></i> 240 horas</p>
+              <p class="card-text">Descubra como desenvolver sites e sistemas dinâmicos utilizando PHP, uma das
+                linguagens
+                mais usadas para web. Neste curso, você vai aprender desde a lógica básica até a criação de aplicações
+                completas com banco de dados e integração com front-end.</p>
+              <i class="bi bi-star-fill text-warning"></i> 4,7
             </div>
-            <div class="card-footer">
-              <small class="text-muted">Concluiu o módulo de Front-end</small>
-            </div>
+            <a href="https://www.youtube.com/watch?v=TfsO0BGvGn0&list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_"
+              target="_blank" class="btn btn-primary w-100">
+              Iniciar Curso
+            </a>
           </div>
         </div>
 
-        <!-- CARD 3 -->
         <div class="col">
-          <div class="card h-100 shadow-sm">
-            <img src="../img/depoimentos4.jpg" class="card-img-top" alt="Aluno da CodLab">
+          <div class="card h-100">
+            <img src="../img/sql.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Mariana Lima</h5>
-              <p class="card-text">
-                "Os professores explicam de forma clara e os projetos práticos me deram segurança para buscar minha
-                primeira vaga."
-              </p>
+              <h5 class="card-title">SQL</h5>
+              <p><i class="bi bi-clock"></i> 36 horas</p>
+              <p class="card-text">Domine a linguagem SQL para gerenciar e consultar bancos de dados com eficiência.
+                Neste
+                curso, você aprenderá a criar tabelas, manipular dados e montar consultas otimizadas para projetos
+                reais,
+                uma habilidade essencial para qualquer desenvolvedor.</p>
+              <i class="bi bi-star-fill text-warning"></i> 4,9
             </div>
-            <div class="card-footer">
-              <small class="text-muted">Concluiu o módulo de Back-end</small>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD 4 -->
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <img src="../img/depoimento8.jpg" class="card-img-top" alt="Aluno da CodLab">
-            <div class="card-body">
-              <h5 class="card-title">Rafael Gomes</h5>
-              <p class="card-text">
-                "A didática é excelente e os conteúdos atualizados. Consegui aplicar imediatamente no meu trabalho."
-              </p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Concluiu o módulo de UX/UI Design</small>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD 5 -->
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <img src="../img/depoimento2.jpg" class="card-img-top" alt="Aluno da CodLab">
-            <div class="card-body">
-              <h5 class="card-title">Juliana Martins</h5>
-              <p class="card-text">
-                "Os projetos práticos me ajudaram a criar um portfólio forte. Já consegui entrevistas na área de
-                tecnologia."
-              </p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Concluiu o módulo de Full Stack</small>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD 6 -->
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <img src="../img/depoimento0.jpg" class="card-img-top" alt="Aluno da CodLab">
-            <div class="card-body">
-              <h5 class="card-title">Marina Oliveira</h5>
-              <p class="card-text">
-                "Nunca pensei que aprender programação seria tão acessível. A CodLab mudou minha forma de estudar."
-              </p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Concluiu o módulo de Banco de Dados</small>
-            </div>
+            <a href="https://www.youtube.com/watch?v=Ofktsne-utM&list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r"
+              target="_blank" class="btn btn-primary">
+              Iniciar Curso
+            </a>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="apoiadores">
-      <h2>Quem sonha com a gente</h2>
-      <p class="paragrafo-apoiadores">Na CodLab, acreditamos que a transformação digital só acontece quando caminhamos
-        juntos. Por isso, contamos com empresas parceiras que compartilham da nossa missão de tornar o aprendizado em
-        tecnologia acessível, inovador e de qualidade. Juntas, essas parcerias impulsionam nossos projetos e ajudam cada
-        estudante a transformar sonhos em conquistas.</p>
-    </div>
-    <p class="empresas-apoiadoras"><img src="../img/fecomercio.png" width="200" height="200"><img
-        src="../img/caldeira-3.png" width="200" height="200"><img src="../img/senac.png" width="200" height="200"><img
-        src="../img/sucesu.png" width="150" height="200"></p>
+      <!-- resto do conteúdo... -->
 
-  </main>
+    </main>
 
-  <footer>
     <footer class="footer" id="footer-contatos">
       <div class="container">
         <div class="footer-logo">
@@ -584,36 +260,63 @@
           <h3>Contato</h3>
           <p>Email: contato@Codlab.com</p>
           <p>Telefone: (51) 99999-9999</p>
-          <p>Endereço: Rua Barão de Vitória- Porto Alegre </p>
+          <p>Endereço: Rua Barão de Vitória - Porto Alegre</p>
           <p>&copy; 2025 Codlab. Todos os direitos reservados.</p>
         </div>
 
         <div class="footer-social">
           <h3>Siga-nos</h3>
-          <a href="https://www.google.com/?hl=pt_BR"> <img src="../img/facebook.png" alt="Redes Sociais" width="50px"
-              height="40px"></a>
-          <a href="https://www.google.com/?hl=pt_BR"> <img src="../img/instagram2.png" alt="Redes Sociais" width="60px"
-              height="40px"></a>
-          <a href="https://www.google.com/?hl=pt_BR"> <img src="../img/linkedin2.png" alt="Redes Sociais" width="50px"
-              height="50px"></a>
-
-        </div>
-
-        <div class="footer-social">
+          <div class="social-icons">
+            <a href="#" target="_blank"><img src="../img/facebook.png" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="../img/instagram2.png" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="../img/linkedin2.png" alt="LinkedIn"></a>
+          </div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.7916152930943!2d-51.221467824446215!3d-30.04283567492445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951978567f17f28d%3A0x2c2c5272bacf4d3a!2sSenac%20Tech!5e0!3m2!1spt-BR!2sbr!4v1755891881314!5m2!1spt-BR!2sbr"
-            width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+      </div>
     </footer>
 
+    <!-- *** FECHA O zoomWrapper AQUI (adicionado) *** -->
+  </div> <!-- /#zoomWrapper -->
 
+  <!-- jQuery (import obrigatório antes do script que usa $) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      var escala = 1.0;
+      var passo = 0.1;
+      var min = 0.8;
+      var max = 1.5;
+
+      function aplicarEscala() {
+        $('#zoomWrapper').css({
+          'transform': 'scale(' + escala + ')',
+          'transform-origin': '0 0'
+        });
+      }
+
+      $('#aumentar').click(function () {
+        if (escala < max) {
+          escala = Math.round((escala + passo) * 100) / 100;
+          aplicarEscala();
+        }
+      });
+
+      $('#diminuir').click(function () {
+        if (escala > min) {
+          escala = Math.round((escala - passo) * 100) / 100;
+          aplicarEscala();
+        }
+      });
+
+      aplicarEscala();
+    });
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
-
-
 
 </html>
