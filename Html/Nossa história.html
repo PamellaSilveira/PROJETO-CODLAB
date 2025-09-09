@@ -47,11 +47,34 @@
         ul {
             padding-left: 20px;
         }
-      
+
+        #acessibilidade {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .btn-acessibilidade {
+            font-size: 18px;
+            margin: 0 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        #zoomWrapper {
+            transition: font-size 0.3s ease-in-out;
+        }
     </style>
 </head>
 
 <body>
+
+
+    <div id="acessibilidade">
+        <button class="btn btn-primary btn-acessibilidade" id="diminuir">A-</button>
+        <button class="btn btn-primary btn-acessibilidade" id="aumentar">A+</button>
+    </div>
 
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
@@ -262,5 +285,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+<script>
+    let fonte = 100; // tamanho inicial em %
+    const body = document.body;
+
+    document.getElementById("aumentar").addEventListener("click", () => {
+        fonte += 10;
+        body.style.fontSize = fonte + "%";
+    });
+
+    document.getElementById("diminuir").addEventListener("click", () => {
+        if (fonte > 50) { // limite mínimo
+            fonte -= 10;
+            body.style.fontSize = fonte + "%";
+        }
+    });
+</script>
 
 </html>

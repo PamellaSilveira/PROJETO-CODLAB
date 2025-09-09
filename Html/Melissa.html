@@ -1,46 +1,283 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Melissa</title>
-    <link rel="stylesheet" href="../css/Melissa.css"> <!-- link com o CSS -->
+  <!-- Metadados -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codlab Cursos</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link rel="icon" href="../img/logo.jpeg" type="image/png">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Estilos personalizados -->
+  <style>
+    .perfil {
+      background-color: #090040;
+      border-radius: 15px;
+      max-width: 600px;
+      margin: 40px auto;
+      /* centraliza horizontalmente */
+      padding: 20px;
+      text-align: justify;
+      /* centraliza texto e imagem */
+      color: white;
+      /* texto claro */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Imagem centralizada e com borda arredondada */
+    .perfil img {
+      border-radius: 15px;
+      display: block;
+      margin: 0 auto 20px auto;
+      /* centraliza e espaça embaixo */
+      width: 250px;
+      height: 350px;
+      object-fit: cover;
+      /* para manter proporção */
+    }
+
+    a.btn-primary {
+      text-decoration: none;
+    }
+
+    #acessibilidade {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .btn-acessibilidade {
+      font-size: 18px;
+      margin: 0 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    #zoomWrapper {
+      transition: font-size 0.3s ease-in-out;
+    }
+  </style>
 </head>
 
 <body>
+  <!-- Botões de acessibilidade -->
+  <div id="acessibilidade">
+    <button class="btn btn-primary btn-acessibilidade" id="diminuir" aria-label="Diminuir fonte">A-</button>
+    <button class="btn btn-primary btn-acessibilidade" id="aumentar" aria-label="Aumentar fonte">A+</button>
+  </div>
 
-    <div class="container">
-
-        <img src="../img/melissa.jpeg" alt="Foto de Melissa" class="foto" widht="200px" height="400px" > 
-        <h1>Melissa Cezar de Souza</h1>
-
-        <h3>Programadora</h3>
-        <p>
-            Atualmente estou no 3º ano do Ensino Médio e tenho 18 anos. Tenho experiências profissionais em diferentes áreas,
-            o que me proporcionou uma boa base de responsabilidade, comunicação e organização no ambiente de trabalho.
-        </p>
-        <p>
-            Atuei como recepcionista em um salão de beleza, atendendo clientes e auxiliando nas rotinas administrativas.
-            Também trabalhei na área do DMAE no Tudo Fácil, prestando atendimento ao público e realizando processos internos.
-            Além disso, tive experiência em home office como compradora de precatórios, desenvolvendo habilidades de pesquisa,
-            análise e negociação.
-        </p>
-        <p>
-            Atualmente, estou migrando para a área da tecnologia, onde descobri uma nova paixão. Estou fazendo um curso de
-            desenvolvimento Front-End e tenho buscado aprender cada vez mais sobre programação, com foco em HTML, CSS e
-            JavaScript. Estou muito motivada a crescer nesse novo caminho e desenvolver minhas habilidades técnicas.
-        </p>
-
-        <h2>Hobbies</h2>
-        <ul> 
-            <li>Ler livros de Romance</li>
-              <li>Aprender coisas novas</li>
-               <li> Estudar programação</li>
-        </ul>
-
-        <a href="../Html/home.html" class="botao">Voltar à página inicial</a>
+  <!-- VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
     </div>
+  </div>
+
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="titulo-pag" id="home">
+      <h1>Codlab</h1>
+      <h2>Desenvolvendo seu futuro</h2>
+    </div>
+  </header>
+
+  <!-- Perfil -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="../img/logosemfundo.png" alt="Logotipo CodLab" class="logo-img">
+      </a>
+
+      <!-- Botão de toggle para mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links e botões -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Links alinhados à esquerda -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../HTML/Home.html">Home</a>
+          </li>
+          <li class="nav-item"></li>
+          <a class="nav-link active" aria-current="page" href="../HTML/Nossa história.html">Nossa História</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Desenvolvedoras</a>
+            <ul class="dropdown-menu">
+              <ul class="lista-cursos">
+                <li><a class="dropdown-item" href="../Html/marli.html">Marli Anelisa Cardoso Milkievicz</a>
+                <li><a class="dropdown-item" href="../Html/Melissa.html">Melissa Cezar de Souza</a>
+                <li><a class="dropdown-item" href="../Html/sobre.html">Pamella Prestes Silveira</a>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cursos
+            </a>
+            <ul class="dropdown-menu">
+              <ul class="lista-cursos">
+                <li><a class="dropdown-item" href="#">Angular</a></li>
+                <li><a class="dropdown-item" href="#">C#</a></li>
+                <li><a class="dropdown-item" href="#">C++</a></li>
+                <li><a class="dropdown-item" href="#">CSS</a></li>
+                <li><a class="dropdown-item" href="#">Docker</a></li>
+                <li><a class="dropdown-item" href="#">Flutter</a></li>
+                <li><a class="dropdown-item" href="#">HTML</a></li>
+                <li><a class="dropdown-item" href="#">Java</a></li>
+                <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                <li><a class="dropdown-item" href="#">Kubernetes</a></li>
+                <li><a class="dropdown-item" href="#">Microsoft Azure</a></li>
+                <li><a class="dropdown-item" href="#">MongoDB</a></li>
+                <li><a class="dropdown-item" href="#">MySQL</a></li>
+                <li><a class="dropdown-item" href="#">PHP</a></li>
+                <li><a class="dropdown-item" href="#">PostgreSQL</a></li>
+                <li><a class="dropdown-item" href="#">Python</a></li>
+                <li><a class="dropdown-item" href="#">React</a></li>
+                <li><a class="dropdown-item" href="#">TypeScript</a></li>
+                <li><a class="dropdown-item" href="#">Vue.js</a></li>
+              </ul>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer-contatos">Contatos</a>
+          </li>
+        </ul>
+        <div class="d-flex" role="search">
+
+          <a href="../Html/cadastro.html" style="text-decoration: none; font: size 35px; padding:10px;">Criar
+            Conta</a>
+          <a href="../Html/login.html" class="btn btn-primary me-2" type="submit">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="perfil">
+    <img src="../img/melissa.jpeg">
+    <center>
+      <h1>Melissa Cezar de Souza</h1>
+    </center>
+    <h3>Programadora</h3>
+
+    <p>
+      Atualmente estou no 3º ano do Ensino Médio e tenho 18 anos. Tenho experiências profissionais em diferentes áreas,
+      o que me proporcionou uma boa base de responsabilidade, comunicação e organização no ambiente de trabalho.
+    </p>
+    <p>
+      Atuei como recepcionista em um salão de beleza, atendendo clientes e auxiliando nas rotinas administrativas.
+      Também trabalhei na área do DMAE no Tudo Fácil, prestando atendimento ao público e realizando processos internos.
+      Além disso, tive experiência em home office como compradora de precatórios, desenvolvendo habilidades de pesquisa,
+      análise e negociação.
+    </p>
+    <p>
+      Atualmente, estou migrando para a área da tecnologia, onde descobri uma nova paixão. Estou fazendo um curso de
+      desenvolvimento Front-End e tenho buscado aprender cada vez mais sobre programação, com foco em HTML, CSS e
+      JavaScript. Estou muito motivada a crescer nesse novo caminho e desenvolver minhas habilidades técnicas.
+    </p>
+
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Ler livros de Romance</li>
+      <li>Aprender coisas novas</li>
+      <li> Estudar programação</li>
+    </ul>
+
+
+    <a href="../Html/home.html" class="btn btn-primary">Voltar à página inicial</a>
+    </main>
+  </section>
+
+  <footer>
+    <footer class="footer" id="footer-contatos">
+      <div class="container">
+        <div class="footer-logo">
+          <h2>Codlab</h2>
+          <p>Desenvolvendo seu futuro</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Links úteis</h3>
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#">Desenvolvedoras</a></li>
+            <li><a href="../Html/Nossa história.html">Nossa História</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contato</h3>
+          <p>Email: contato@Codlab.com</p>
+          <p>Telefone: (51) 99999-9999</p>
+          <p>Endereço: Rua Barão de Vitória- Porto Alegre </p>
+          <p>&copy; 2025 Codlab. Todos os direitos reservados.</p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Siga-nos</h3>
+          <a href="https://www.google.com/?hl=pt_BR"> <img src="../img/facebook.png" alt="Redes Sociais" width="50px"
+              height="40px"></a>
+          <a href="https://www.google.com/?hl=pt_BR"> <img src="../img/instagram2.png" alt="Redes Sociais" width="60px"
+              height="40px"></a>
+          <a href="https://www.google.com/?hl=pt_BR"> <img src="../img/linkedin2.png" alt="Redes Sociais" width="50px"
+              height="50px"></a>
+
+        </div>
+
+        <div class="footer-social">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.7916152930943!2d-51.221467824446215!3d-30.04283567492445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951978567f17f28d%3A0x2c2c5272bacf4d3a!2sSenac%20Tech!5e0!3m2!1spt-BR!2sbr!4v1755891881314!5m2!1spt-BR!2sbr"
+            width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      let fonte = 100; // tamanho inicial em %
+      const body = document.body;
+
+      document.getElementById("aumentar").addEventListener("click", () => {
+        fonte += 10;
+        body.style.fontSize = fonte + "%";
+      });
+
+      document.getElementById("diminuir").addEventListener("click", () => {
+        if (fonte > 50) { // limite mínimo
+          fonte -= 10;
+          body.style.fontSize = fonte + "%";
+        }
+      });
+    </script>
 
 </body>
 
